@@ -3,39 +3,37 @@
    padding: 0;
    box-sizing: border-box;
    font-family: 'Raleway', sans-serif;
+   /*font-family: 'Open Sans', sans-serif;*/
    list-style-type: none;
    text-decoration: none;
 }
 
 .wrapper {
    max-width: 1200px;
-   padding: 0 15px;
-   margin: 50px auto;
+   padding: 10px;
+   margin: 0 auto;
 }
 
-.section_title {
-   text-align: center;
-}
 
-.section_subtitle {
-   text-align: center;
-}
+
 
 /*section tabs*/
 
-.tabs_body {
-   margin-top: 60px;
+.tabs {
+   
 }
 
 .tabs_meny {
    display: flex;
-   justify-content: flex-start;
+   justify-content: space-between;
    justify-items: center;
    align-items: center;
+   /*width: 610px;*/
+   padding-right: 500px;
 }
 
 .tabs_meny__list1 {
-   width: 180px;
+   width: 203px;
    height: 40px;
    text-align: center;
    padding-top: 9px;
@@ -53,7 +51,7 @@
 }
 
 .tabs_meny__list2 {
-   width: 180px;
+   width: 203px;
    text-align: center;
    font-family: 'Open Sans';
    font-style: normal;
@@ -64,7 +62,7 @@
 }
 
 .tabs_meny__list3 {
-   width: 180px;
+   width: 203px;
    text-align: center;
    font-family: 'Open Sans';
    font-style: normal;
@@ -79,32 +77,39 @@
    border: 1px solid #C6CBCD;
 }
 
-.row_body {
+.text {
    display: flex;
+   flex-direction: column;
    justify-content: space-between;
-   flex-wrap: wrap;
-   padding: 40px 30px 30px 100px;
 }
 
 .row_title {
+   margin-top: 60px;
+   margin-left: 100px;
    font-family: 'Open Sans';
    font-style: normal;
    font-weight: 700;
    font-size: 30px;
    line-height: 41px;
+
 }
 
 .row_dicription {
+   margin-top: 60px;
+   margin-left: 100px;
+   margin-right: 60px;
+   margin-bottom: 30px;
    font-weight: 400;
    font-size: 18px;
    line-height: 21px;
 }
 
-.p_dicription {
-   padding: 20px 0;
-}
-
-.btn a {
+.btn button {
+   /*margin-top: 30px;*/
+   margin-bottom: 54px;
+   margin-left: 100px;
+   width: 270px;
+   height: 58px;
    font-family: 'Open Sans';
    font-style: normal;
    font-weight: 400;
@@ -113,37 +118,31 @@
    color: #FFFFFF;
    border: none;
    background: #EC7979;
-   padding: 10px 50px;
 }
 
 .img {
-   width: 470px;
+   display: flex;
    height: 500px;
+   width: 470px;
+}
+
+.p_dicription {
+   margin: 20px 0 0 0;
 }
 
 /*section tabs*/
 /*-------------------*/
 /*section awesome*/
 
-.solid {
-   border: 1px solid;
-   border-color: coral;
-   width: 170px;
-   margin: 50px auto;
-   margin-bottom: 40px;
-}
-
-.cart_body {
+.cart-main {
    text-align: center;
-   margin: 60px 0;
 }
 
 .cart {
    display: inline-block;
    text-align: center;
-   margin: 30px 0;
-   padding: 0 15px;
-   width: 300px;
+   padding: 5px;
+   /*width: 300px;*/
 }
 
 .card_img--1 {
@@ -156,12 +155,6 @@
    border-color: coral;
    border-radius: 46px;
 }
-
-.cart__title {
-   margin: 50px 0;
-}
-
-.cart__description {}
 
 .card_img--2 {
    display: inline-block;
@@ -185,21 +178,71 @@
    border-radius: 46px;
 }
 
+.cart__title {
+
+   text-align: center;
+   font-family: 'Open Sans';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 33px;
+}
+
+.section-title {
+   margin: 50px auto;
+   text-align: center;
+   font-weight: 400;
+   font-size: 36px;
+   line-height: 42px;
+}
+
+.section--description {
+   margin-top: 40px;
+   margin-bottom: 100px;
+   text-align: center;
+   color: #86878B;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21px;
+}
+
+.solid {
+   border: 1px solid;
+   border-color: coral;
+   width: 170px;
+   margin: auto;
+}
+
 /*section awesome*/
 /*-------------------*/
-/*pricing PRICING*/
+/*pricing options*/
+
+.pricing-bg {
+   background-color: #F5F5F5;
+   padding-bottom: 50px;
+}
 
 .pricing-cart {
    text-align: center;
-   margin: 60px 0;
 }
 
 .pricing-cart--left {
    display: inline-block;
-   text-align: center;
-   margin: 30px 0;
-   padding: 0 15px;
-   width: 300px;
+   padding: 27px 0;
+   margin: 0 10px;
+}
+
+.pricing-cart--mid {
+   display: inline-block;
+   filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+   padding: 27px 0;
+   margin: 0 10px;
+}
+
+.pricing-cart--right {
+   display: inline-block;
+   padding: 27px 0;
+   margin: 0 10px;
 }
 
 .pricind-list--item {
@@ -210,18 +253,11 @@
    color: #86878B;
 }
 
-.pricind-list--item--space {
-   padding: 10px 0;
-   border: 1px solid #F5F5F5;
-   font-style: normal;
-   font-weight: 400;
-   font-size: 18px;
-   line-height: 21px;
-   color: rgba(134, 135, 139, 1);
-   padding: 10px 0;
-}
-
 .pricind-list--item h4 {
+   display: inline-block;
+   text-align: center;
+   padding: 5px;
+   /*width: 300px;*/
    background: #333333;
    border: 1px solid #F5F5F5;
    font-family: 'Open Sans';
@@ -230,20 +266,41 @@
    font-size: 24px;
    line-height: 33px;
    color: #FFFFFF;
-   padding: 10px 0;
+
 }
 
 .pricind-list--item h3 {
+   display: inline-block;
+   text-align: center;
+   padding: 5px;
+   /*width: 300px;*/
    background: #333333;
    border: 1px solid #F5F5F5;
    font-weight: 700;
    font-size: 36px;
    line-height: 42px;
    color: #FFFFFF;
-   padding: 20px 0;
+
+}
+
+.pricind-list--item h5 {
+
+   display: inline-block;
+   text-align: center;
+   padding: 5px;
+   /*width: 300px;*/
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21px;
+   color: #86878B;
+   background: #FFFFFF;
+   border: 2px solid #F5F5F5;
 }
 
 .pricind-list--item--first {
+
+   padding: 10px 40px;
+   text-align: center;
    background: #333333;
    border: 1px solid #F5F5F5;
    font-style: normal;
@@ -251,31 +308,14 @@
    font-size: 18px;
    line-height: 21px;
    color: rgba(255, 255, 255, 0.5);
-   padding: 10px 0;
 }
 
-.pricing-cart--mid {
-   display: inline-block;
-   text-align: center;
-   margin: 30px 0;
-   padding: 0 15px;
-   width: 300px;
-}
-
-.pricing-cart--right {
-   display: inline-block;
-   text-align: center;
-   margin: 30px 0;
-   padding: 0 15px;
-   width: 300px;
-}
-
-/*pricing PRICING*/
+/*pricing options*/
 
 /*section banner*/
 
 .banner {
-   background: url(assets/imagedesign.jpg);
+   background: url(../assets/imagedesign.jpg);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -324,6 +364,7 @@
    text-transform: capitalize;
    color: #FFFFFF;
    border: 2px solid #FFFFFF;
+
 }
 
 /*section banner*/
