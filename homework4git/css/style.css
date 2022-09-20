@@ -19,6 +19,7 @@
    font-weight: 400;
    font-size: 36px;
    line-height: 42px;
+   text-transform: uppercase;
 
 }
 
@@ -33,8 +34,8 @@
 
 /*mainpage*/
 
-.mainpage {
-   position: relative;
+.MAINPAGE {
+   /*position: relative;*/
 
 }
 
@@ -42,11 +43,11 @@
    background: black;
    display: flex;
    justify-content: space-between;
-   position: fixed;
-   width: 100%;
-   left: 0;
+   /*position: fixed;
+   width: 100%;*/
+   /*left: 0;
    top: 0;
-   z-index: 2;
+   z-index: 2;*/
 
 }
 
@@ -389,6 +390,86 @@
 }
 
 /*pricing PRICING*/
+
+/*CUSTOMERS*/
+
+.customer {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   margin-top: 83px;
+   /*text-align: center;*/
+}
+
+.customer_card {
+   /*display: inline-block;
+   text-align: center;
+   margin: 30px 0;*/
+   width: 370px;
+   padding: 15px;
+}
+
+.customer_card__dis {
+   background: #E2E2E2;
+   border-radius: 10px;
+}
+
+.customer_card__dis h5 {
+   padding: 30px 15px;
+   text-align: center;
+   font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21px;
+}
+
+.customer_card__icon {
+   display: flex;
+   padding: 66px 0 0 0;
+}
+
+.customer_card__icon___info {
+   padding: 0 0 0 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.customer_card__icon___img1 {
+   height: 70px;
+   width: 70px;
+   background-image: url(../assets/c1.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: -45px;
+   border-radius: 50%;
+}
+
+.customer_card__icon___img2 {
+   height: 70px;
+   width: 70px;
+   background-image: url(../assets/c2.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: -20px;
+   border-radius: 50%;
+}
+
+.customer_card__icon___img3 {
+   height: 70px;
+   width: 70px;
+   background-image: url(../assets/c3.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: -28px;
+   border-radius: 50%;
+}
+
+
+/*CUSTOMERS*/
+
 
 /*section banner*/
 
